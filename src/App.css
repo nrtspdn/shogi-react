@@ -1,0 +1,47 @@
+body {
+  text-align: center;
+  width: 100%;
+  user-select: none;
+}
+
+.main {
+  display: grid;
+  margin: auto;
+  grid-template-columns: 20% 60% 20%;
+}
+
+.sidebar {
+  align-items: center;
+  margin-top: 10vh;
+}
+
+.right {
+  margin-top: 10vh;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.board {
+  margin: auto;
+  height: 95vmin;
+  display: grid;
+  grid-template-columns: repeat(10, 10%);
+  grid-template-rows: repeat(10, 10%);
+  font-size: 6vmin;
+  aspect-ratio: 1;
+}
+
+.capturedPieces {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.capturedPieces .tile {
+  width: 6vmin;
+  font-size: 4vmin;
+  aspect-ratio: 1;
+}
+
